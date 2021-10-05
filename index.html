@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			background: url(../car.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-color: #000;
+		}
+
+		.form{
+			background: #ffff;
+			width: 40%;
+			margin: auto;
+			padding: 10px;
+			display: flex;
+			border-radius: 100px;
+			margin-top: 10%; 
+			font-size: 20px;
+		}
+
+		input{
+			width: 70%;
+			height: 30px;
+			border: none;
+			font-size: 16px;
+			padding-left: 15px;
+		}
+
+		input:focus{
+			outline: none;
+		}
+
+		button{
+			width: 30%;
+			background-color: #00809d;
+			border: 2px solid #00809d;
+			color: #ffffff;
+			border-radius: 40px;
+			font-size: 16px;
+		}
+
+		button:hover{
+			border-color: #00809d;
+			background-color: #ffffff;
+			color: #000;
+			cursor: pointer;
+		}
+
+		.list{
+			background-color: white;
+			width: 70%;
+			margin: auto;
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.list .movies{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.list .movies div{
+			width: 200px;
+			background-color: #ddd;
+			height: 250px;
+			margin: 10px;
+		}
+
+		#all-movies img{
+			width: 200px;
+			height: 250px;
+			object-fit: cover;
+		}
+		#all-movies p{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="form">
+		<input type="text" name="title" id="title">
+		<button onclick="search()">Search</button>
+	</div>
+
+	<div class="list">
+		<h1>Movies</h1>
+		<div class="movies" id="movies">
+
+			
+			
+		</div>
+	</div>
+
+</body>
+	<script type="text/javascript" src="index.js"></script>
+</html>
